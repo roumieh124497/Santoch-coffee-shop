@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// base styles
+@import 'base/base';
+@import 'base/reset';
+
+// mixin style
+@import 'abstracts/mixins';
+@import 'abstracts/colors';
+
+// layout style
+@import 'layout/navigation';
+@import 'layout/footer';
+
+//componenets style
+@import 'components/buttons';
+@import 'components/imageCart';
+@import 'components/carousel';
+@import 'components/card';
+
+//pages styles
+@import 'pages/home';
+@import 'pages/testimonial';
+@import 'pages/menu';
+@import 'pages/about';
+@import 'pages/offer';
+@import 'pages/contact';

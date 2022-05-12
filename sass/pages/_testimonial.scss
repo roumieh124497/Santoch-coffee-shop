@@ -1,0 +1,58 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+  overflow-x: hidden;
+  @media screen and (max-width: 790px) {
+    flex-direction: column;
+  }
+  .testimonials-text__container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    .testimonials-title__container {
+      @media screen and (max-width: 457px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h5 {
+        color: $primary-color-daeker;
+      }
+      h1 {
+        @media screen and (max-width: 1211px) {
+          font-size: 2.2rem;
+        }
+        @media screen and (max-width: 550px) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.testimonials-one__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  h5 {
+    width: 300px;
+  }
+}
+
+.about-images {
+  div {
+    opacity: 0;
+  }
+}

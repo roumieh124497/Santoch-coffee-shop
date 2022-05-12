@@ -1,0 +1,108 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 3rem;
+  margin: 0 auto;
+  //   column-gap: 2rem;
+  @media screen and (max-width: 1414px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 930px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  li {
+    width: 300px;
+    height: 370px;
+    background-color: $primary-color-dark;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba($primary-color, 0.4);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+
+      h4 {
+        border-bottom: 3px solid $secondary-color;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 210px;
+    }
+
+    @media screen and (max-width: 1097px) {
+      width: 250px;
+      height: 320px;
+    }
+    @media screen and (max-width: 930px) {
+      width: 300px;
+      height: 370px;
+    }
+    @media screen and (max-width: 790px) {
+      width: 250px;
+      height: 320px;
+    }
+    @media screen and (max-width: 790px) {
+      width: 250px;
+      height: 320px;
+    }
+    @media screen and (max-width: 790px) {
+      width: 220px;
+      height: 290px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 250px;
+      height: 320px;
+    }
+  }
+  .product--1 {
+    margin-right: 150px;
+    opacity: 0;
+  }
+  .product--2 {
+    margin-left: 250px;
+    opacity: 0;
+  }
+  .product--3 {
+    margin-right: 350px;
+    opacity: 0;
+  }
+  .product--4 {
+    margin-left: 450px;
+    opacity: 0;
+  }
+  .product--5 {
+    margin-right: 550px;
+    opacity: 0;
+  }
+  .product--6 {
+    margin-left: 650px;
+    opacity: 0;
+  }
+  .product--7 {
+    margin-right: 750px;
+    opacity: 0;
+  }
+  .product--8 {
+    margin-left: 850px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,69 @@
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  @media screen and (max-width: 1097px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    @media screen and (max-width: 790px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 550px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 350px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .div1 {
+    background-image: url('../images/product/coffee1.jpg');
+    @include product-photo;
+  }
+  .div2 {
+    background-image: url('../images/product/coffee2.jpg');
+    @include product-photo;
+  }
+  .div3 {
+    background-image: url('../images/product/coffee3.jpg');
+    @include product-photo;
+  }
+  .div4 {
+    background-image: url('../images/product/coffee4.jpg');
+    @include product-photo;
+  }
+  .div5 {
+    background-image: url('../images/product/coffee5.jpg');
+    @include product-photo;
+  }
+  .div6 {
+    background-image: url('../images/product/coffee6.jpg');
+    @include product-photo;
+  }
+  .div7 {
+    background-image: url('../images/product/coffee7.jpg');
+    @include product-photo;
+  }
+  .div8 {
+    background-image: url('../images/product/coffee8.jpg');
+    @include product-photo;
+  }
+  .div9 {
+    background-image: url('../images/product/coffee9.jpg');
+    @include product-photo;
+  }
+  .div10 {
+    background-image: url('../images/product/coffee10.jpg');
+    @include product-photo;
+  }
+  .div11 {
+    background-image: url('../images/product/coffee11.jpg');
+    @include product-photo;
+  }
+  .div12 {
+    background-image: url('../images/product/coffee12.jpg');
+    @include product-photo;
+  }
+}

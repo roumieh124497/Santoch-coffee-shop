@@ -1,0 +1,56 @@
+.offer {
+  background-color: $secondary-color;
+
+  padding: 2.2rem;
+  text-align: center;
+  margin-top: 5rem;
+  overflow-x: hidden;
+  h2 {
+    color: $primary-color-dark;
+  }
+  .offers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    @media screen and (max-width: 790px) {
+      gap: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
+    .offer-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      margin-left: 600px;
+      opacity: 0;
+
+      svg {
+        width: 260px;
+        height: 260px;
+        @media screen and (max-width: 960px) {
+          width: 200px;
+          height: 200px;
+        }
+        @media screen and (max-width: 790px) {
+          width: 150px;
+          height: 150px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 100px;
+          height: 100px;
+        }
+        @media screen and (max-width: 450px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      h4 {
+        color: $primary-color;
+      }
+    }
+  }
+}
